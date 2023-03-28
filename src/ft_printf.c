@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/18 15:53:17 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/03/28 02:13:52 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/03/28 18:48:44 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ size_t	dispatch(int c, va_list *args)
 	else if (c == 'p')
 		len += convert_digit(va_arg(*args, unsigned long), 'p');
 	else if (c == 'u')
-		len += convert_un_int(va_arg(*args, unsigned int));
+		len += ft_uitoa(va_arg(*args, unsigned int));
 	else if (c == 'x')
 		len += convert_digit(va_arg(*args, unsigned long), 'x');
 	else if (c == 'X')

@@ -1,43 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_len_base.c                                      :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/28 18:19:05 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/03/28 19:20:51 by jhurpy           ###   ########.fr       */
+/*   Created: 2023/02/04 17:39:31 by jeremy            #+#    #+#             */
+/*   Updated: 2023/03/28 19:00:20 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
 
-size_t	ft_len_basep(unsigned long n, int base)
+
+#include <unistd.h>
+
+int	ft_putstr(char *s)
 {
-	size_t	len;
+	int	i;
 
-	len = 0;
-	if (n == 0)
-		return (1);
-	while (n != 0)
+	i = 0;
+	if (s == NULL)
 	{
-		n = n / base;
-		len++;
+		write(1, "(null)", 6);
+		return (6);
 	}
-	return (len);
+	while (s[i] != '\0')
+	{
+		write(1, &s[i], 1);
+		i++;
+	}
+	return (i);
 }
 
-size_t	ft_len_basexu(unsigned int n, int base)
-{
-	size_t	len;
-
-	len = 0;
-	if (n == 0)
-		return (1);
-	while (n != 0)
-	{
-		n = n / base;
-		len++;
-	}
-	return (len);
-}
