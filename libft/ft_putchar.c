@@ -6,11 +6,11 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/28 19:00:25 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/03/28 19:00:37 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/03/28 21:12:20 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "libft.h"
+#include "libft.h"
 
 int	ft_putchar(int c)
 {

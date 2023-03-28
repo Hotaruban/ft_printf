@@ -6,7 +6,7 @@
 /*   By: jhurpy <jhurpy@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/27 02:52:21 by jhurpy            #+#    #+#             */
-/*   Updated: 2023/03/28 19:20:06 by jhurpy           ###   ########.fr       */
+/*   Updated: 2023/03/28 21:13:11 by jhurpy           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,6 @@ size_t	ft_litohexa(unsigned long long c, const int f)
 	{
 		ft_litohexa(c / 16, f);
 		ft_litohexa(c % 16, f);
-
 	}
 	else if (c <= 9)
 		ft_putchar(c + '0');
@@ -72,7 +71,7 @@ size_t	ft_litohexa(unsigned long long c, const int f)
 		else
 			ft_putchar(c - 10 + 'A');
 	}
-	return(len);
+	return (len);
 }
 
 size_t	ft_uitohexa(unsigned int c, const int f)
@@ -84,7 +83,6 @@ size_t	ft_uitohexa(unsigned int c, const int f)
 	{
 		ft_uitohexa(c / 16, f);
 		ft_uitohexa(c % 16, f);
-
 	}
 	else if (c <= 9)
 		ft_putchar(c + '0');
@@ -95,7 +93,7 @@ size_t	ft_uitohexa(unsigned int c, const int f)
 		else
 			ft_putchar(c - 10 + 'A');
 	}
-	return(len);
+	return (len);
 }
 
 size_t	ft_uitoa(unsigned int n)
