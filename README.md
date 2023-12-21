@@ -17,3 +17,11 @@
 **Varargs**: Mastery of variable arguments (varargs) is essential for this project, as printf should be able to handle a variable number of arguments.
 
 **Return Value**: The project requires participants to manage the return value of printf, providing a count of characters printed.
+
+### Methodology:
+Participants will leverage their understanding of string manipulation, pointers, and variadic functions to create a functional printf implementation. The project encourages a deep dive into the intricacies of format parsing and output generation.
+
+### Assessment:
+Evaluation is based on the accurate implementation of printf functionality, correct handling of various format specifiers and modifiers, and the ability to produce formatted output as expected. Attention to edge cases and efficient memory management may also be considered in the assessment.
+
+The "ft_printf" project serves as a comprehensive exercise in understanding the inner workings of the printf function, offering participants the opportunity to enhance their skills in string manipulation, memory management, and variadic functions in the C programming language.
