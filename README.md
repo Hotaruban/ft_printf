@@ -1,7 +1,7 @@
 # <p align = "center">ft_printf</p>
 
 <p align = "center">
-<a href = "https://github.com/Hotaruban" ><img ft_printf = "ft_printf" src = "ft_printf.png"></a>
+<a href = "https://github.com/Hotaruban" ><img ft_printf = "ft_printf" src = "ft_printfe.png"></a>
 </p>
 
 ### The "ft_printf" project challenges participants to implement their own version of the printf function in C. The objective is to develop a custom printf function capable of formatting and printing various data types, including strings, integers, and floating-point numbers, while supporting a range of formatting options.
